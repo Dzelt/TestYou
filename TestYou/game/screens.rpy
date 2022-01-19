@@ -81,6 +81,19 @@ style frame:
 ## In-game screens
 ################################################################################
 
+screen welcome(textMassage):
+    frame:
+        xalign 0.5
+        yalign 0.5
+        xpadding 30
+        ypadding 30
+        xsize 950
+        vbox:
+            text "Welcome" underline True
+            text "\n" 
+            text textMassage justify True
+            text "\n"
+            textbutton "Close" xalign 0.5 yalign 0.5 action Return()
 
 ## Say screen ##################################################################
 ##
