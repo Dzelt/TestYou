@@ -90,7 +90,7 @@ screen welcome(textMassage):
         xsize 950
         vbox:
             text "Welcome" underline True
-            text "\n" 
+            text "\n"
             text textMassage justify True
             text "\n"
             textbutton "Close" xalign 0.5 yalign 0.5 action Return()
@@ -335,11 +335,6 @@ screen navigation():
             textbutton _("Main Menu") action MainMenu()
 
         textbutton _("About") action ShowMenu("about")
-
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
