@@ -204,7 +204,7 @@ label question10:
             play sound true
             "Correct! After the First World War, Ealing, which became a borough in 1901 (the first in Middlesex) began to expand. In 1926, Hanwell, Greenford and Perivale became incorporated into Ealing and these were joined by Northolt in 1928."
             $ PlayerScore += 5
-        "Nine Inch Nails":
+        "1965":
             play sound wrong
             "Wrong. The answer is 1928."
             $ PlayerScore -= 3
