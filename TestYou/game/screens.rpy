@@ -95,6 +95,33 @@ screen welcome(textMassage):
             text "\n"
             textbutton "Close" xalign 0.5 yalign 0.5 action Return()
 
+screen score(textMassage):
+    frame:
+        xalign 0.5
+        yalign 0.5
+        xpadding 100
+        ypadding 100
+        xsize 400
+        ysize 400
+        vbox:
+            text "Your Score: " justify True
+            text textMassage justify True
+            text "\n"
+            textbutton "Close" xalign 0.5 yalign 0.5 action Return()
+
+screen scoreInit():
+    frame:
+        xalign 0.5
+        yalign 0.5
+        xpadding 100
+        ypadding 100
+        xsize 300
+        ysize 300
+        vbox:
+            text "{size=24}{b} SCORE {/b}{/size}" justify True
+            text "\n"
+            textbutton "Next" xalign 0.5 yalign 0.5 action Return()
+
 ## Say screen ##################################################################
 ##
 ## The say screen is used to display dialogue to the player. It takes two
@@ -571,6 +598,8 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
+            text _("Group - ContentCreator\n\nScenario Writer - Akmal Hassan Bin Zubbir - 148914\nProgrammer - Muhammad Afieq Bin Saliman - 146339\nMusic Composer - Ma Jinlu -145259\nIllustrator - Peng Zhiqiang - 150024\n")
+            text _("Project resources {a=https://drive.google.com/drive/u/0/folders/1E2uqVVCkK7jCDdct1uIisvf04RaZxI93}Link{/a}\nGitHub {a=https://github.com/Dzelt/TestYou}Link{/a}\n\n")       
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 

@@ -2,9 +2,21 @@
 errors listed below, and try again.
 
 
-File "game/questions.rpy", line 213: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    " question"
-    ^
+File "game/define.rpy", line 3: expected '=' not found.
+    define define audio.BGM2 = "audio/BGM2.ogg"
+                  ^
+
+File "game/define.rpy", line 4: expected '=' not found.
+    define define audio.true = "Correct choosing.ogg"
+                  ^
+
+File "game/define.rpy", line 5: expected '=' not found.
+    define define audio.wrong = "Wrong choosing.ogg"
+                  ^
+
+File "game/define.rpy", line 6: expected '=' not found.
+    define define audio.clap = "clapping.ogg"
+                  ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Wed Jan 19 14:32:09 2022
+Tue Jan 25 07:33:58 2022
